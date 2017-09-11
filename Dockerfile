@@ -7,3 +7,5 @@ RUN yum update \
     yum install epel-release -y
     
 CMD ["date"]
+
+#push
