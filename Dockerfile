@@ -2,7 +2,7 @@ FROM centos:7
 
 MAINTAINER JD <jd@advonanalytics.com>
 
-RUN yum update \
+RUN yum update -y \
     && yum groupinstall "minimal" -y \
     && yum install epel-release -y \
     && yum install net-tools -y \
