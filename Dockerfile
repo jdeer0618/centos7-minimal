@@ -9,6 +9,6 @@ RUN yum update -y \
     && yum install tcpdump -y \
     && yum clean all
 
-#ENTRYPOINT ["/bin/bash"]
+ENTRYPOINT ["/bin/bash"]
 
 CMD ["date"]
