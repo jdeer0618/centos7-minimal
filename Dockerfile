@@ -6,6 +6,7 @@ RUN yum update \
     yum groupinstall "minimal" -y \
     yum install epel-release -y \
     yum install net-tools -y \
+    yum install tcpdump -y \
     yum clean all
 
 ENTRYPOINT ["/bin/bash"]
