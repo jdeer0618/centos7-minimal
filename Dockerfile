@@ -4,11 +4,5 @@ MAINTAINER JD <jd@advonanalytics.com>
 
 RUN yum update -y \
     && yum groupinstall "minimal" -y \
-    && yum install epel-release -y \
-    && yum install net-tools -y \
-    && yum install tcpdump -y \
+    && yum install -y epel-release net-tools tcpdump wget \
     && yum clean all
-
-ENTRYPOINT ["/bin/bash"]
-
-CMD ["date"]
